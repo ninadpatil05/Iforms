@@ -1,0 +1,368 @@
+InfyProject/
+├── backend
+│   ├── alembic
+│   ├── app
+│   │   ├── api
+│   │   │   ├── ai_analysis.py
+│   │   │   ├── ai_forms.py
+│   │   │   ├── analytics.py
+│   │   │   ├── auth.py
+│   │   │   ├── branch_rules.py
+│   │   │   ├── condition_groups.py
+│   │   │   ├── conditional_rules.py
+│   │   │   ├── deps.py
+│   │   │   ├── duplicate_override.py
+│   │   │   ├── export.py
+│   │   │   ├── fields.py
+│   │   │   ├── form_versions.py
+│   │   │   ├── forms.py
+│   │   │   ├── public_forms.py
+│   │   │   ├── response_values.py
+│   │   │   ├── sections.py
+│   │   │   └── submissions.py
+│   │   ├── config
+│   │   │   ├── __init__.py
+│   │   │   └── settings.py
+│   │   ├── core
+│   │   ├── database
+│   │   │   ├── __init__.py
+│   │   │   ├── base.py
+│   │   │   └── database.py
+│   │   ├── middleware
+│   │   ├── models
+│   │   │   ├── __init__.py
+│   │   │   ├── ai_analysis_report.py
+│   │   │   ├── ai_form_draft.py
+│   │   │   ├── branch_rule.py
+│   │   │   ├── condition_group.py
+│   │   │   ├── conditional_rule.py
+│   │   │   ├── duplicate_override_request.py
+│   │   │   ├── field.py
+│   │   │   ├── form.py
+│   │   │   ├── form_invite.py
+│   │   │   ├── form_version.py
+│   │   │   ├── form_view.py
+│   │   │   ├── response_value.py
+│   │   │   ├── scheduled_email_share.py
+│   │   │   ├── section.py
+│   │   │   ├── submission.py
+│   │   │   └── user.py
+│   │   ├── repositories
+│   │   │   ├── ai_analysis_report_repository.py
+│   │   │   ├── ai_form_draft_repository.py
+│   │   │   ├── analytics_repository.py
+│   │   │   ├── branch_rule_repository.py
+│   │   │   ├── condition_group_repository.py
+│   │   │   ├── conditional_rule_repository.py
+│   │   │   ├── duplicate_override_request_repository.py
+│   │   │   ├── field_repository.py
+│   │   │   ├── form_invite_repository.py
+│   │   │   ├── form_repository.py
+│   │   │   ├── form_version_repository.py
+│   │   │   ├── response_value_repository.py
+│   │   │   ├── scheduled_email_share_repository.py
+│   │   │   ├── section_repository.py
+│   │   │   ├── submission_repository.py
+│   │   │   └── user_repository.py
+│   │   ├── schemas
+│   │   │   ├── ai_analysis.py
+│   │   │   ├── ai_form.py
+│   │   │   ├── analytics.py
+│   │   │   ├── branch_rule.py
+│   │   │   ├── condition_group.py
+│   │   │   ├── conditional_rule.py
+│   │   │   ├── duplicate_override_request.py
+│   │   │   ├── export.py
+│   │   │   ├── field.py
+│   │   │   ├── form.py
+│   │   │   ├── form_invite.py
+│   │   │   ├── form_version.py
+│   │   │   ├── response_value.py
+│   │   │   ├── scheduled_email_share.py
+│   │   │   ├── section.py
+│   │   │   ├── share_email.py
+│   │   │   ├── submission.py
+│   │   │   └── user.py
+│   │   ├── services
+│   │   │   ├── ai
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── factory.py
+│   │   │   │   ├── gemini_provider.py
+│   │   │   │   └── provider_base.py
+│   │   │   ├── ai_analysis_service.py
+│   │   │   ├── ai_form_service.py
+│   │   │   ├── analytics_service.py
+│   │   │   ├── auth_service.py
+│   │   │   ├── branch_evaluation_service.py
+│   │   │   ├── branch_rule_service.py
+│   │   │   ├── condition_group_service.py
+│   │   │   ├── conditional_rule_service.py
+│   │   │   ├── duplicate_override_service.py
+│   │   │   ├── email_service.py
+│   │   │   ├── export_service.py
+│   │   │   ├── field_service.py
+│   │   │   ├── form_invite_service.py
+│   │   │   ├── form_service.py
+│   │   │   ├── form_version_service.py
+│   │   │   ├── response_value_service.py
+│   │   │   ├── scheduled_email_share_service.py
+│   │   │   ├── section_service.py
+│   │   │   ├── share_email_service.py
+│   │   │   ├── submission_service.py
+│   │   │   └── user_service.py
+│   │   ├── utils
+│   │   │   ├── cycle_detection.py
+│   │   │   ├── form_schedule.py
+│   │   │   ├── formula_evaluation.py
+│   │   │   ├── rate_limit.py
+│   │   │   ├── rule_evaluation.py
+│   │   │   └── security.py
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   └── scheduler.py
+│   ├── dev_emails
+│   │   ├── 20260814_081133_151587_ninadpatil_dev_at_gmail_com.txt
+│   │   ├── 20260819_035302_872369_tester_1787111582_at_example_com.txt
+│   │   ├── 20260819_035329_424572_tester_1787111608_at_example_com.txt
+│   │   ├── 20260819_035407_357479_tester_1787111646_at_example_com.txt
+│   │   ├── 20260819_035438_237959_tester_1787111677_at_example_com.txt
+│   │   ├── 20260819_035549_010544_tester_1787111748_at_example_com.txt
+│   │   ├── 20260819_035745_397596_tester_1787111864_at_example_com.txt
+│   │   ├── 20260819_035804_833691_tester_1787111884_at_example_com.txt
+│   │   ├── 20260819_035823_648638_tester_1787111902_at_example_com.txt
+│   │   ├── 20260819_035850_122292_tester_1787111929_at_example_com.txt
+│   │   ├── 20260819_035923_409516_tester_1787111962_at_example_com.txt
+│   │   ├── 20260819_035955_433678_tester_1787111994_at_example_com.txt
+│   │   ├── 20260819_040026_747114_tester_1787112026_at_example_com.txt
+│   │   ├── 20260819_040112_807891_tester_1787112072_at_example_com.txt
+│   │   ├── 20260819_040206_058690_tester_1787112125_at_example_com.txt
+│   │   └── 20260819_040233_959874_tester_1787112153_at_example_com.txt
+│   ├── tests
+│   │   └── verify_remaining_modules.py
+│   ├── uploads
+│   │   ├── 1
+│   │   │   └── 701a8f1a-35d4-42da-8b45-86745bbf3058_test_sample.txt
+│   │   ├── 2
+│   │   │   └── 349a39ed-b7fe-49fe-8097-f0b0c5f5e306_test_sample.txt
+│   │   ├── 4
+│   │   │   └── 94e23302-0c3e-4aca-8e2d-56756a8e3c8d_git_workshop.txt
+│   │   ├── 585
+│   │   │   └── bb88a6a5-3f6b-46f9-aa70-d94f36268083_0b37761a-de32-47ee-a3a4-e138b97ef542___JR_FrgE.S 2908.JPG
+│   │   ├── 587
+│   │   │   └── 44c91277-c270-4616-9232-f6db95adfa54_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   ├── 589
+│   │   │   ├── 6df4664b-d5e6-40fc-9289-de2f59e7d9dd_0d17b92b-8ec2-4a00-a8ff-9daea3fed2e8___JR_FrgE.S 2915.JPG
+│   │   │   └── afa1a74b-4069-4e07-af26-e48132c00bfc_0d17b92b-8ec2-4a00-a8ff-9daea3fed2e8___JR_FrgE.S 2915.JPG
+│   │   ├── 591
+│   │   │   └── 6e2f8002-c31b-4e95-bd20-7d57dd7950ca_0cefbd12-c195-40cd-b2d1-be0f9ee550b4___JR_FrgE.S 8762.JPG
+│   │   ├── 593
+│   │   │   └── 2a76a458-569c-42cd-b75d-afa48662706f_0d17b92b-8ec2-4a00-a8ff-9daea3fed2e8___JR_FrgE.S 2915.JPG
+│   │   ├── 595
+│   │   │   ├── 31720aef-b5b2-45b1-9f9a-4a449e46975f_0d17b92b-8ec2-4a00-a8ff-9daea3fed2e8___JR_FrgE.S 2915.JPG
+│   │   │   ├── bd07b0d1-40e6-4004-8804-6c8fb938abd6_0d17b92b-8ec2-4a00-a8ff-9daea3fed2e8___JR_FrgE.S 2915.JPG
+│   │   │   └── d5690b28-2c75-4877-88c5-a8f9ca5d4280_0d17b92b-8ec2-4a00-a8ff-9daea3fed2e8___JR_FrgE.S 2915.JPG
+│   │   ├── 599
+│   │   │   ├── 833bb036-05ae-4079-b33d-a3a3d2cbef52_0ce8b939-3bdf-4078-8715-c0cb48afb078___JR_FrgE.S 2777.JPG
+│   │   │   ├── b1bf3d78-6f35-4372-b4b1-8faf3fd655e7_0ce8b939-3bdf-4078-8715-c0cb48afb078___JR_FrgE.S 2777.JPG
+│   │   │   └── c6db543a-810d-4c54-8c7a-61e063456368_0cc47b2d-4a92-4bbd-af46-945165dd1960___JR_FrgE.S 8586.JPG
+│   │   ├── 611
+│   │   │   ├── 3a446acc-246f-4577-a1bc-58e670db27b0_00a6039c-e425-4f7d-81b1-d6b0e668517e___RS_HL 7669.JPG
+│   │   │   └── 8aab3908-e395-4961-a5c9-528ade4443f5_00a6039c-e425-4f7d-81b1-d6b0e668517e___RS_HL 7669.JPG
+│   │   ├── 613
+│   │   │   └── 8008a82f-1cf2-46a8-aa39-90b85500f7c3_0b91573d-d0f3-4e57-b7e5-e1924f537f0e___RS_HL 6216.JPG
+│   │   ├── 615
+│   │   │   └── afc83feb-554f-4373-8544-783e08292bf0_0b6ec66f-fe63-4eef-8068-cf8ed0baf0de___RS_HL 7482.JPG
+│   │   ├── 617
+│   │   │   ├── 652e8108-7f79-4e5c-bd8b-c295c3197c0e_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   │   └── 9d3799ac-15b1-4492-9577-30e139500aef_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   ├── 620
+│   │   │   ├── 75844085-9233-40e1-8bf7-381ec92cec9b_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   │   └── 7e320ffa-fd93-49b0-b655-b41c962cfd24_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   ├── 622
+│   │   │   ├── 71d34ec2-ed2f-4f36-86c7-37222b447ff1_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   │   └── c26385b2-3614-4e00-9f7a-ef49a02ef547_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   ├── 624
+│   │   │   └── 36f91f07-5ce3-4025-bfce-4251801f76a0_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   ├── 628
+│   │   │   ├── 43987781-584b-4c17-b823-a0a4034066cb_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   │   └── e9a19a63-90e7-4fe2-9736-d87ebf265c05_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   ├── 639
+│   │   │   └── 1ac821d7-4977-4719-8183-4ccb4f01a06c_test_sample.txt
+│   │   ├── 642
+│   │   │   └── d05e37f7-c27e-4565-8430-a39023e17e5d_test_sample.txt
+│   │   ├── 645
+│   │   │   └── daf6599f-acae-47b0-b02e-b5516e106540_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   ├── 646
+│   │   │   └── fe42b66c-adc5-4606-9237-be71dc8b49b8_0d17b92b-8ec2-4a00-a8ff-9daea3fed2e8___JR_FrgE.S 2915.JPG
+│   │   ├── 647
+│   │   │   └── f77dc1e2-9b26-49a4-87d0-0d1c5c945b3a_0d17b92b-8ec2-4a00-a8ff-9daea3fed2e8___JR_FrgE.S 2915.JPG
+│   │   ├── 648
+│   │   │   └── a6c7a3ab-facb-451b-8eff-3a92670fd16d_test_sample.txt
+│   │   ├── 650
+│   │   │   └── 78266376-000f-4867-82c6-c80a4429fb4e_0bc40cc3-6a85-480e-a22f-967a866a56a1___JR_FrgE.S 2784.JPG
+│   │   ├── 651
+│   │   │   └── 16cd2a24-4071-461b-8389-a199d1f9b464_test_sample.txt
+│   │   ├── 653
+│   │   │   └── 67b44dbc-6dec-436a-b250-3e8e9620f15a_0bb8fb61-d561-43fd-89a3-d24d253adef9___JR_FrgE.S 2849.JPG
+│   │   ├── 657
+│   │   │   └── f2f3512d-925f-4340-b0b6-3645445aad4b_0d17b92b-8ec2-4a00-a8ff-9daea3fed2e8___JR_FrgE.S 2915.JPG
+│   │   ├── 658
+│   │   │   └── b3e359ae-215a-476c-bbdb-ddaa466105ed_test_sample.txt
+│   │   ├── 659
+│   │   │   └── 58633a5a-868c-441a-a5dd-f37d267ff770_test_sample.txt
+│   │   ├── 661
+│   │   │   └── 0eed1179-ce4e-4aa3-a40d-2971cd376a24_0cefbd12-c195-40cd-b2d1-be0f9ee550b4___JR_FrgE.S 8762.JPG
+│   │   ├── 662
+│   │   │   └── cdafe90b-3f44-44f4-b7ab-e2307d288ee9_test_sample.txt
+│   │   ├── 663
+│   │   │   └── 21d56083-198f-4fcd-89e1-b7d0757de300_test_sample.txt
+│   │   ├── 686
+│   │   ├── 688
+│   │   ├── 690
+│   │   └── 692
+│   ├── MIGRATIONS.md
+│   └── requirements.txt
+├── frontend
+│   ├── public
+│   │   └── email_templates
+│   │       └── share_invite.html
+│   ├── src
+│   │   ├── _blueprint-ui
+│   │   │   └── frontend
+│   │   │       ├── src
+│   │   │       │   ├── components
+│   │   │       │   │   ├── AuthCard.tsx
+│   │   │       │   │   ├── Button.tsx
+│   │   │       │   │   ├── ConfirmDialog.tsx
+│   │   │       │   │   ├── FieldCard.tsx
+│   │   │       │   │   ├── FieldEditorDrawer.tsx
+│   │   │       │   │   ├── FieldTypeIcon.tsx
+│   │   │       │   │   ├── FormCard.tsx
+│   │   │       │   │   ├── Input.tsx
+│   │   │       │   │   ├── Navbar.tsx
+│   │   │       │   │   └── StatusBadge.tsx
+│   │   │       │   ├── pages
+│   │   │       │   │   ├── Dashboard.tsx
+│   │   │       │   │   ├── FormBuilder.tsx
+│   │   │       │   │   ├── FormDetail.tsx
+│   │   │       │   │   ├── Forms.tsx
+│   │   │       │   │   ├── Login.tsx
+│   │   │       │   │   └── Signup.tsx
+│   │   │       │   └── index.css
+│   │   │       ├── index.html
+│   │   │       └── tailwind.config.ts
+│   │   ├── api
+│   │   │   ├── aiAnalysis.ts
+│   │   │   ├── aiForms.ts
+│   │   │   ├── analytics.ts
+│   │   │   ├── auth.ts
+│   │   │   ├── axios.ts
+│   │   │   ├── branchRules.ts
+│   │   │   ├── conditionGroups.ts
+│   │   │   ├── duplicateOverride.ts
+│   │   │   ├── export.ts
+│   │   │   ├── fields.ts
+│   │   │   ├── forms.ts
+│   │   │   ├── invites.ts
+│   │   │   ├── publicForms.ts
+│   │   │   ├── responseValues.ts
+│   │   │   ├── scheduledEmails.ts
+│   │   │   ├── sections.ts
+│   │   │   ├── shareEmail.ts
+│   │   │   └── submissions.ts
+│   │   ├── assets
+│   │   ├── components
+│   │   │   ├── ai
+│   │   │   │   ├── AnalysisReportView.tsx
+│   │   │   │   └── GeneratedFormPreview.tsx
+│   │   │   ├── Alert.tsx
+│   │   │   ├── AuthCard.tsx
+│   │   │   ├── BlueprintLayer.tsx
+│   │   │   ├── BranchRuleDrawer.tsx
+│   │   │   ├── Button.tsx
+│   │   │   ├── Checkbox.tsx
+│   │   │   ├── CommandPalette.tsx
+│   │   │   ├── ComparisonValueInput.tsx
+│   │   │   ├── ConditionGroupDrawer.tsx
+│   │   │   ├── ConfirmDialog.tsx
+│   │   │   ├── CornerBrackets.tsx
+│   │   │   ├── CreateFormModal.tsx
+│   │   │   ├── Crosshair.tsx
+│   │   │   ├── Drawer.tsx
+│   │   │   ├── DuplicateOverridePanel.tsx
+│   │   │   ├── EmptyState.tsx
+│   │   │   ├── FieldCard.tsx
+│   │   │   ├── FieldEditorDrawer.tsx
+│   │   │   ├── FieldTypeIcon.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── FormCard.tsx
+│   │   │   ├── FormPreviewModal.tsx
+│   │   │   ├── FormScheduleDuplicateSettings.tsx
+│   │   │   ├── InlineBanner.tsx
+│   │   │   ├── Input.tsx
+│   │   │   ├── LoadingSkeleton.tsx
+│   │   │   ├── MetricCard.tsx
+│   │   │   ├── Modal.tsx
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── Pagination.tsx
+│   │   │   ├── PublishShareModal.tsx
+│   │   │   ├── Radio.tsx
+│   │   │   ├── Select.tsx
+│   │   │   ├── ShareEmailModal.tsx
+│   │   │   ├── Skeleton.tsx
+│   │   │   ├── StatusBadge.tsx
+│   │   │   ├── SubmissionsView.tsx
+│   │   │   ├── Switch.tsx
+│   │   │   ├── Table.tsx
+│   │   │   ├── Textarea.tsx
+│   │   │   └── Toast.tsx
+│   │   ├── context
+│   │   │   ├── AuthContext.tsx
+│   │   │   └── ToastContext.tsx
+│   │   ├── pages
+│   │   │   ├── AIFormAnalyzer.tsx
+│   │   │   ├── AIFormGenerator.tsx
+│   │   │   ├── Analytics.tsx
+│   │   │   ├── Dashboard.tsx
+│   │   │   ├── FormBuilder.tsx
+│   │   │   ├── FormDetail.tsx
+│   │   │   ├── Forms.tsx
+│   │   │   ├── LandingPage.tsx
+│   │   │   ├── Login.tsx
+│   │   │   ├── PublicFormFill.tsx
+│   │   │   └── Signup.tsx
+│   │   ├── routes
+│   │   │   └── ProtectedRoute.tsx
+│   │   ├── types
+│   │   │   ├── aiAnalysis.ts
+│   │   │   ├── aiForm.ts
+│   │   │   ├── analytics.ts
+│   │   │   ├── auth.ts
+│   │   │   ├── branchRule.ts
+│   │   │   ├── conditionGroup.ts
+│   │   │   ├── field.ts
+│   │   │   ├── form.ts
+│   │   │   ├── ruleOperators.ts
+│   │   │   └── section.ts
+│   │   ├── utils
+│   │   │   ├── formulaEvaluation.ts
+│   │   │   └── ruleEvaluation.ts
+│   │   ├── App.css
+│   │   ├── App.tsx
+│   │   ├── index.css
+│   │   └── main.tsx
+│   ├── .gitignore
+│   ├── .oxlintrc.json
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── README.md
+│   ├── tailwind.config.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+├── project-context
+├── .gitignore
+└── README.md

@@ -1,0 +1,213 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------
+   WARM FUNCTIONAL DESIGN TOKENS (LIGHT & DARK THEME VARIABLES)
+--------------------------------------------------------------------- */
+:root {
+  /* Surfaces (Paper) */
+  --color-paper-lowest: #FFFFFF;
+  --color-paper-base: #FAF7F0;
+  --color-paper-high: #F2EDE4;
+  --color-paper-border: #E5E0D8;
+  --color-paper-hover: #EFE9DD;
+
+  /* Ink (Typography & Icons) */
+  --color-ink: #2B2620;
+  --color-ink-muted: #78716C;
+  --color-ink-subtle: #A8A29E;
+
+  /* Terracotta (Primary Brand) */
+  --color-terracotta: #B5502E;
+  --color-terracotta-hover: #A0451F;
+  --color-terracotta-active: #8B391A;
+  --color-terracotta-container: #F0D5CB;
+  --color-terracotta-fixed: #F9EBE6;
+
+  /* Sage (Secondary Accent) */
+  --color-sage: #7C9070;
+  --color-sage-hover: #697C5E;
+  --color-sage-container: #C3D0BD;
+  --color-sage-fixed: #E7ECE5;
+
+  /* Functional Status Colors */
+  --color-amber: #D97706;
+  --color-amber-container: #FEF3C7;
+  --color-amber-border: #FDE68A;
+
+  --color-forest: #2D6A4F;
+  --color-forest-container: #D8F3DC;
+  --color-forest-border: #B7E4C7;
+
+  --color-brick: #B91C1C;
+  --color-brick-hover: #991B1B;
+  --color-brick-container: #FEE2E2;
+  --color-brick-border: #FCA5A5;
+
+  /* Legacy variable mappings for system compatibility */
+  --color-cream: var(--color-paper-base);
+  --color-cream-soft: var(--color-paper-high);
+  --color-white: var(--color-paper-lowest);
+  --color-ink2: var(--color-ink-muted);
+  --color-slate: var(--color-ink-muted);
+  --color-slate-light: var(--color-ink-subtle);
+  --color-border: var(--color-paper-border);
+  --color-cyan: var(--color-terracotta);
+  --color-cyan-dark: var(--color-terracotta-hover);
+  --color-cyan-tint: var(--color-terracotta-fixed);
+  --color-danger: var(--color-brick);
+  --color-danger-tint: var(--color-brick-container);
+  --color-shadow: rgba(43, 38, 32, 0.12);
+
+  /* Fonts */
+  --font-serif: 'Source Serif 4', Georgia, serif;
+  --font-sans: 'IBM Plex Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+.dark {
+  /* Surfaces (Paper Dark) */
+  --color-paper-lowest: #24201A;
+  --color-paper-base: #1A1712;
+  --color-paper-high: #2C2720;
+  --color-paper-border: #38322A;
+  --color-paper-hover: #332D25;
+
+  /* Ink (Typography & Icons Dark) */
+  --color-ink: #EAE6DF;
+  --color-ink-muted: #A8A29E;
+  --color-ink-subtle: #78716C;
+
+  /* Terracotta (Primary Brand Dark) */
+  --color-terracotta: #D46A48;
+  --color-terracotta-hover: #E27B59;
+  --color-terracotta-active: #ED8C6B;
+  --color-terracotta-container: #4D261A;
+  --color-terracotta-fixed: #2A1710;
+
+  /* Sage (Secondary Accent Dark) */
+  --color-sage: #95A989;
+  --color-sage-hover: #A7BA9B;
+  --color-sage-container: #2A3626;
+  --color-sage-fixed: #1B2418;
+
+  /* Functional Status Colors Dark */
+  --color-amber: #F59E0B;
+  --color-amber-container: #452D08;
+  --color-amber-border: #784E10;
+
+  --color-forest: #40916C;
+  --color-forest-container: #163325;
+  --color-forest-border: #22573E;
+
+  --color-brick: #EF4444;
+  --color-brick-hover: #F87171;
+  --color-brick-container: #451A1A;
+  --color-brick-border: #7F1D1D;
+
+  --color-cream: var(--color-paper-base);
+  --color-cream-soft: var(--color-paper-high);
+  --color-white: var(--color-paper-lowest);
+  --color-ink2: var(--color-ink-muted);
+  --color-slate: var(--color-ink-muted);
+  --color-slate-light: var(--color-ink-subtle);
+  --color-border: var(--color-paper-border);
+  --color-cyan: var(--color-terracotta);
+  --color-cyan-dark: var(--color-terracotta-hover);
+  --color-cyan-tint: var(--color-terracotta-fixed);
+  --color-danger: var(--color-brick);
+  --color-danger-tint: var(--color-brick-container);
+  --color-shadow: rgba(0, 0, 0, 0.4);
+}
+
+@theme {
+  --color-paper-lowest: var(--color-paper-lowest);
+  --color-paper-base: var(--color-paper-base);
+  --color-paper-high: var(--color-paper-high);
+  --color-paper-border: var(--color-paper-border);
+  --color-paper-hover: var(--color-paper-hover);
+
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-ink-subtle: var(--color-ink-subtle);
+
+  --color-terracotta: var(--color-terracotta);
+  --color-terracotta-hover: var(--color-terracotta-hover);
+  --color-terracotta-active: var(--color-terracotta-active);
+  --color-terracotta-container: var(--color-terracotta-container);
+  --color-terracotta-fixed: var(--color-terracotta-fixed);
+
+  --color-sage: var(--color-sage);
+  --color-sage-hover: var(--color-sage-hover);
+  --color-sage-container: var(--color-sage-container);
+  --color-sage-fixed: var(--color-sage-fixed);
+
+  --color-amber: var(--color-amber);
+  --color-amber-container: var(--color-amber-container);
+  --color-amber-border: var(--color-amber-border);
+
+  --color-forest: var(--color-forest);
+  --color-forest-container: var(--color-forest-container);
+  --color-forest-border: var(--color-forest-border);
+
+  --color-brick: var(--color-brick);
+  --color-brick-hover: var(--color-brick-hover);
+  --color-brick-container: var(--color-brick-container);
+  --color-brick-border: var(--color-brick-border);
+
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-paper-base);
+    color: var(--color-ink);
+    transition: background-color 200ms ease, color 200ms ease;
+    margin: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: var(--color-ink);
+    letter-spacing: -0.015em;
+  }
+
+  input, select, textarea, button {
+    font-family: inherit;
+  }
+
+  button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, a:focus-visible {
+    outline: 2px solid var(--color-terracotta);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .shadow-warm-sm {
+    box-shadow: 0 1px 2px 0 rgba(43, 38, 32, 0.05);
+  }
+  .shadow-warm-md {
+    box-shadow: 0 4px 6px -1px rgba(43, 38, 32, 0.08), 0 2px 4px -2px rgba(43, 38, 32, 0.04);
+  }
+  .shadow-warm-lg {
+    box-shadow: 0 10px 15px -3px rgba(43, 38, 32, 0.09), 0 4px 6px -4px rgba(43, 38, 32, 0.04);
+  }
+  .shadow-warm-lift {
+    box-shadow: 0 12px 22px -4px rgba(43, 38, 32, 0.12), 0 4px 10px -2px rgba(181, 80, 46, 0.15);
+  }
+}
+
